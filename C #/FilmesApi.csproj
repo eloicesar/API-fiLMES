@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <!-- Alvo da versão do .NET, se estiver usando .NET 7, altere para net7.0 -->
+    <TargetFramework>net6.0</TargetFramework> <!-- Pode alterar para net7.0 se necessário -->
+    <Nullable>enable</Nullable>  <!-- Habilita o tratamento de nullability -->
+    <ImplicitUsings>enable</ImplicitUsings>  <!-- Usos implícitos para facilitar -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>  <!-- Adicione isso se for especificar o sistema operacional -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Pacote para o Entity Framework Core com suporte ao SQLite -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0" /> <!-- Ferramentas de design, como migrações -->
+    
+    <!-- Dependência do ASP.NET Core, já incluso no SDK -->
+    <!-- <PackageReference Include="Microsoft.AspNetCore.App" /> -->  <!-- Não precisa, já está incluído no SDK -->
+  </ItemGroup>
+
+</Project>
